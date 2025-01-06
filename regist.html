@@ -1,0 +1,50 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="Profil.html">Profil</a></li>
+          <li><a href="transaksi.html">Transaksi</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+<body>
+    <div class="container">
+        <h1>Daftar</h1>
+        <form id="registrasi-form">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="konfirmasi-password">Konfirmasi Password</label>
+                <input type="password" id="konfirmasi-password" name="konfirmasi-password" required>
+            </div>
+            <button type="submit">Daftar</button>
+        </form>
+        <div id="pesan-error"></div>
+    </div>
+    <footer>
+        <p>© 2025 Aplikasi simpan pinjam. Kalilla Aimeealika</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>

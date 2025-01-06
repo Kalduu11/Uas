@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ismpan pinjam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Profil.html">Profil</a></li>
+        <li><a href="transaksi.html">Transaksi</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Form Transaksi</h2>
+    <form id="formTransaksi">
+      <div class="form-group">
+        <label for="namaTransaksi">Nama Transaksi</label>
+        <input type="text" id="namaTransaksi" name="namaTransaksi" required />
+      </div>
+      <div class="form-group">
+        <label for="jumlah">Jumlah</label>
+        <input type="number" id="jumlah" name="jumlah" required />
+      </div>
+      <div class="form-group">
+        <label for="kategori">Kategori</label>
+        <select id="kategori" name="kategori" required>
+          <option value="">Pilih Kategori</option>
+          <option value="pinjaman">Pinjaman</option>
+          <option value="simpanan">Simpanan</option>
+        </select>
+      </div>
+      <button type="submit">Simpan</button>
+    </form>
+    <h2>Daftar Transaksi</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Transaksi</th>
+          <th>Jumlah</th>
+          <th>Kategori</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="daftarTransaksi">
+        <tr>
+          <td>Contoh Transaksi</td>
+          <td>100000</td>
+          <td>Simpanan</td>
+          <td><button class="delete-btn" onclick="hapusTransaksi(this)">Hapus</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+<script>document.getElementById("formTransaksi").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const namaTransaksi = document.getElementById("namaTransaksi").value;
+  const jumlah = document.getElementById("jumlah").value;
+  const kategori = document.getElementById("kategori").value;
+
+  if (!namaTransaksi || !jumlah || !kategori) {
+    alert("Harap isi semua bidang.");
+    return;
+  }
+
+  const tbody = document.getElementById("daftarTransaksi");
+  const newRow = document.createElement("tr");
+
+  newRow.innerHTML = `
+    <td>${namaTransaksi}</td>
+    <td>${jumlah}</td>
+    <td>${kategori}</td>
+    <td><button class="delete-btn" onclick="hapusTransaksi(this)">Hapus</button></td>
+  `;
+
+  tbody.appendChild(newRow);
+
+  document.getElementById("formTransaksi").reset();
+});
+
+
+function hapusTransaksi(button) {
+  const row = button.parentElement.parentElement;
+  row.remove();
+}
+</script>
+<footer>
+  <p>© 2025 Aplikasi simpan pinjam. Kalilla Aimeealika</p>
+</footer>

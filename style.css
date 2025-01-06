@@ -1,0 +1,225 @@
+.flex-screen 
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background: #312ede;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+ padding : 10px 0;
+}
+
+    .flex-container-regist {
+        position: relative;
+        text-align: center; 
+    }
+    
+    .logo img {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: white; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .title {
+    text-align:center;
+  }
+  
+  .message {
+    text-align: left;
+    margin: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .left-align {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+ 
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.flex-container-regist{
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color:#312ede;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #312ede;
+}
+   
+      
+      .flex-container-transaksi {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      
+      .flex-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px 5px 0 0;
+      }
+      
+      .header h1 {
+        margin: 0;
+        font-size: 1.8em;
+      }
+      
+      .header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+      }
+      
+      .header li {
+        display: inline-block;
+        margin-left: 15px;
+      }
+      
+      .content {
+        padding: 20px;
+      }
+      
+      .flex-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        overflow-x: auto;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .flex-table {
+          width: 100%;
+        }
+        
+        th, td {
+          padding: 8px;
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        th, td {
+          padding: 6px;
+          font-size: 12px;
+        }
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+      }
+      
+      th {
+        background-color: #f0f0f0;
+      }
+      
+      .pagination {
+        text-align: center;
+      }
+      
+      .pagination a {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #2665a3;
+      }
+
+      .login-container {
+        width: 50%;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
